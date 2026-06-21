@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Route API endpoints directly to Netlify serverless functions
+[[redirects]]
+  from = "/api/ai/insights"
+  to = "/.netlify/functions/insights"
+  status = 200
+
+[[redirects]]
+  from = "/api/ai/chat"
+  to = "/.netlify/functions/chat"
+  status = 200
+
+# Standard fallback redirect for React single-page applications (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
