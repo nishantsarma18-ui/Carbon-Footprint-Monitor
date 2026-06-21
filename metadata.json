@@ -1,0 +1,6 @@
+{
+  "name": "Carbon Footprint Monitor",
+  "description": "An interactive full-stack web application to track carbon footprints, generate personalized AI insights, and discover actionable reduction tips.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
